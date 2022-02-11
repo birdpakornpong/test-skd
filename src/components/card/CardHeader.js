@@ -9,7 +9,9 @@ export default function CardHeader() {
     }
   return (
     <div className='row'>
-        <div className='col-3'>Img</div>
+        <div className='col-3'>
+            <img className="logo" src="https://tcas-assets.skooldio.com/icons/edugroup/med.png"></img>
+        </div>
         <div className='col-7'>
             <span className="text-header">คณะวิศวกรรมศาสตร์</span>
             <p className='text-header2'>สาขาวิศวกรรมทั่วไป</p>
