@@ -26,6 +26,16 @@ export default function CardMain(props) {
         return point
     }
 
+    const round = (num) => {
+        var m = Number((Math.abs(num) * 100).toPrecision(15));
+        return Math.round(m) / 100 * Math.sign(num);
+      }
+
+    const numberFormat = (num = 0) => {
+        const number = num && round(num) || 0.00;
+        return number.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+      }
+
   return (
     <div>
         <div className='row mb-3'>
@@ -61,15 +71,15 @@ export default function CardMain(props) {
         </div>
         <div className='row'>
             <div className='col-4 text-center'> 
-                <span className='point-oth'>{getPointMin(data)}</span>
+                <span className='point-oth'>{numberFormat(getPointMin(data))}</span>
                 <p className='point-text-oth'>คะแนนต่ำสุด {getYear(data)}</p>
             </div>
             <div className='col-4 border-box text-center'>
-                <span className='point-oth'>{getPointMax(data)}</span>
+                <span className='point-oth'>{numberFormat(getPointMax(data))}</span>
                 <p className='point-text-oth'>คะแนนเฉลี่ย {getYear(data)}</p>            
             </div>
             <div className='col-4 text-center'> 
-                <span className='point-oth'>{getPointAvg(data)}</span>
+                <span className='point-oth'>{numberFormat(getPointAvg(data))}</span>
                 <p className='point-text-oth'>คะแนนสูงสุด {getYear(data)}</p>        
             </div>
         </div>
