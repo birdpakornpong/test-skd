@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CardMain.css'
 export default function CardMain() {
+
+    const statusRound = {
+        roundOne: true,
+        roundTwo: true,
+        roundThree: false,
+        roundFour: true,
+        roundFive: false
+    }
+
   return (
     <div>
         <div className='row mb-3'>
@@ -9,11 +18,11 @@ export default function CardMain() {
             </div>
             <div className='col-9'>
                 <div>
-                    <button type="button" className="btn btn-success circle">1</button>
-                    <button type="button" className="btn btn-success circle mx-2">2</button>
-                    <button type="button" className="btn btn-success circle">3</button>
-                    <button type="button" className="btn btn-success circle mx-2">4</button>
-                    <button type="button" className="btn btn-success circle">5</button>
+                    <button type="button" disabled={!statusRound.roundOne} className="btn btn-success circle">1</button>
+                    <button type="button" disabled={!statusRound.roundTwo} className="btn btn-success circle mx-2">2</button>
+                    <button type="button" disabled={!statusRound.roundThree} className="btn btn-success circle">3</button>
+                    <button type="button" disabled={!statusRound.roundFour} className="btn btn-success circle mx-2">4</button>
+                    <button type="button" disabled={!statusRound.roundFive} className="btn btn-success circle">5</button>
                 </div>
             </div>
         </div>

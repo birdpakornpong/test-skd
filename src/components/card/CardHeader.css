@@ -1,0 +1,35 @@
+.color-favorite {
+    color: red
+}
+/*  */
+.text-header {
+    font-family: 'Prompt';
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    color: #ff5a5a;
+}
+.text-header2 {
+    font-family:  'Prompt';
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    color: #9b9b9b;
+    letter-spacing: normal;
+    margin-top: 0.2em;
+}
+.text-header3 {
+    font-family: 'Prompt';
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: normal;
+    color: #9b9b9b;
+    margin-top: 1em;
+}

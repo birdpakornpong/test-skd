@@ -1,5 +1,6 @@
 .width-card {
     max-width: 442px;
+    width: 442px;
     padding: 0.5em;
     /* height: 493px; */
     border-radius: 5px;
