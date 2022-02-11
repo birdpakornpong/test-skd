@@ -1,0 +1,17 @@
+.border-box {
+    border-style: none solid none solid;
+    border-color: #dee2e6!important;
+    border-width: 2px;
+}
+.edit-point {
+    width: 100%;
+    border-radius: 30px;
+    font-size: 0.75em;
+}
+.circle {
+    border-radius: 50%;
+    padding: 0;
+    width: 29px;
+    height: 29px;
+    font-size: 1em;
+}

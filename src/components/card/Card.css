@@ -1,0 +1,9 @@
+.width-card {
+    max-width: 442px;
+    padding: 0.5em;
+    /* height: 493px; */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
